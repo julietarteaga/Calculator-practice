@@ -68,7 +68,7 @@ describe('test1', function() {
 
     });
   it('number plus number', async function() {
-    await driver.get("http://localhost:8000/")
+    await driver.get("http://localhost:8000/src/")
     await driver.manage().window().setRect({ width: 932, height: 1020 })
     await driver.findElement(By.id("num1")).click()
     await driver.findElement(By.id("num1")).sendKeys("1")

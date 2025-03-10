@@ -68,7 +68,7 @@ describe('test1', function() {
 
     });
   it('number plus blank space', async function() {
-    await driver.get("http://localhost:8000/")
+    await driver.get("http://localhost:8000/src/")
     await driver.manage().window().setRect({ width: 942, height: 1020 })
     await driver.findElement(By.css(".input-group:nth-child(2) > label")).click()
     await driver.findElement(By.id("num1")).click()

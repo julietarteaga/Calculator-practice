@@ -68,7 +68,7 @@ describe('test1', function() {
 
     });
   it('7-8', async function() {
-    await driver.get("http://localhost:8000/src/src/")
+    await driver.get("http://localhost:8000/src/")
     await driver.manage().window().setRect({ width: 1050, height: 1002 })
     await driver.findElement(By.id("num1")).click()
     await driver.findElement(By.id("num1")).sendKeys("7")
