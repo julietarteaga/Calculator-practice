@@ -67,22 +67,13 @@ describe('test1', function() {
         }
 
     });
-  it('reset button test', async function() {
+  it('1-1', async function() {
     await driver.get("http://localhost:8000")
-    await driver.manage().window().setRect({ width: 946, height: 1020 })
-    await driver.findElement(By.id("num1")).click()
-    await driver.findElement(By.id("num1")).sendKeys("1")
-    await driver.findElement(By.css("button:nth-child(2)")).click()
+    await driver.manage().window().setRect({ width: 1050, height: 1002 })
     await driver.findElement(By.id("num1")).click()
     await driver.findElement(By.id("num1")).sendKeys("1")
     await driver.findElement(By.id("num2")).click()
-    await driver.findElement(By.id("num2")).sendKeys("2")
-    await driver.findElement(By.css("button:nth-child(2)")).click()
-    await driver.findElement(By.id("num1")).click()
-    await driver.findElement(By.id("num1")).sendKeys("1")
-    await driver.findElement(By.id("num2")).click()
-    await driver.findElement(By.id("num2")).sendKeys("3")
-    await driver.findElement(By.css("button:nth-child(1)")).click()
+    await driver.findElement(By.id("num2")).sendKeys("1")
     await driver.findElement(By.css("button:nth-child(2)")).click()
   })
 })
