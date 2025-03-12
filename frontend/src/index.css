@@ -1,0 +1,101 @@
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style the wrapper */
+  .wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Style the heading */
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the input groups */
+  .input-group {
+    margin-bottom: 15px;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Style the button group */
+  .button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Make sure buttons apply correct colors */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Addition button (Green) */
+button:nth-child(1) {
+  background-color: #4caf50;
+}
+
+button:nth-child(1):hover {
+  background-color: #45a049;
+}
+
+/* Subtraction button (Blue) */
+button:nth-child(2) {
+  background-color: #007bff;
+}
+
+button:nth-child(2):hover {
+  background-color: #0056b3;
+}
+
+/* Reset button (Red) */
+button:nth-child(3) {
+  background-color: #dc3545;
+}
+
+button:nth-child(3):hover {
+  background-color: #c82333;
+}
+
+/* Style the result display */
+h3 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 24px;
+}
