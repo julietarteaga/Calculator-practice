@@ -1,4 +1,5 @@
 package com.example.calculator.controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CalculatorController {
 
     @GetMapping("/add") // http://localhost:8080/add?num1=20&num2=40
@@ -28,5 +30,14 @@ public class CalculatorController {
         int result = Integer.parseInt(num1) * Integer.parseInt(num2);
         return new Calculator(Integer.toString(result));
     }
+
+
+
+
+
+
+
 }
+
+
 
