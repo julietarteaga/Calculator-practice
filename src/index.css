@@ -40,8 +40,7 @@ body {
     font-weight: bold;
   }
   
-  input,
-  select {
+  input {
     padding: 10px;
     font-size: 16px;
     width: 100%;
@@ -53,26 +52,50 @@ body {
   /* Style the button group */
   .button-group {
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
   }
-  
-  button {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4caf50;
-    color: white;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Style the result display */
-  h3 {
-    margin-top: 20px;
-    color: #333;
-    font-size: 24px;
-  }
+
+  /* Make sure buttons apply correct colors */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Addition button (Green) */
+button:nth-child(1) {
+  background-color: #4caf50;
+}
+
+button:nth-child(1):hover {
+  background-color: #45a049;
+}
+
+/* Subtraction button (Blue) */
+button:nth-child(2) {
+  background-color: #007bff;
+}
+
+button:nth-child(2):hover {
+  background-color: #0056b3;
+}
+
+/* Reset button (Red) */
+button:nth-child(3) {
+  background-color: #dc3545;
+}
+
+button:nth-child(3):hover {
+  background-color: #c82333;
+}
+
+/* Style the result display */
+h3 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 24px;
+}
